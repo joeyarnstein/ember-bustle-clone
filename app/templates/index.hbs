@@ -1,0 +1,16 @@
+<div class="jumbotron">
+  <div class="container">
+    <h2>Despite specifying a URL, this tmeplate in index.hbs should load into application.hbs and be rendered.</h2>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    {{#each model as |article|}}
+      {{article-tile article-c=article}}
+    {{/each}}
+  </div>
+</div>
+
+{{new-article save2="save3"}}
+
+<!-- {{outlet}} -->
